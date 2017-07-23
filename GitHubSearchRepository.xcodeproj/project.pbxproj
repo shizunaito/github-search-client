@@ -13,6 +13,7 @@
 		05168C701F2439C300CAFA2F /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C6F1F2439C300CAFA2F /* JSONDecodable.swift */; };
 		05168C721F243EB600CAFA2F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C711F243EB600CAFA2F /* SearchResponse.swift */; };
 		05168C791F2447D300CAFA2F /* GitHubClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C781F2447D300CAFA2F /* GitHubClientError.swift */; };
+		05168C7B1F2449AE00CAFA2F /* GitHubAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C7A1F2449AE00CAFA2F /* GitHubAPIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		05168C6F1F2439C300CAFA2F /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		05168C711F243EB600CAFA2F /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		05168C781F2447D300CAFA2F /* GitHubClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubClientError.swift; sourceTree = "<group>"; };
+		05168C7A1F2449AE00CAFA2F /* GitHubAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				05168C781F2447D300CAFA2F /* GitHubClientError.swift */,
+				05168C7A1F2449AE00CAFA2F /* GitHubAPIError.swift */,
 			);
 			name = Error;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05168C791F2447D300CAFA2F /* GitHubClientError.swift in Sources */,
+				05168C7B1F2449AE00CAFA2F /* GitHubAPIError.swift in Sources */,
 				05168C6E1F2437FC00CAFA2F /* JSONDecodeError.swift in Sources */,
 				05168C701F2439C300CAFA2F /* JSONDecodable.swift in Sources */,
 				05168C721F243EB600CAFA2F /* SearchResponse.swift in Sources */,
