@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05168C621F24356F00CAFA2F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C611F24356F00CAFA2F /* main.swift */; };
 		05168C691F2436EA00CAFA2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C681F2436EA00CAFA2F /* User.swift */; };
 		05168C6B1F24375800CAFA2F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C6A1F24375800CAFA2F /* Repository.swift */; };
 		05168C6E1F2437FC00CAFA2F /* JSONDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C6D1F2437FC00CAFA2F /* JSONDecodeError.swift */; };
 		05168C701F2439C300CAFA2F /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C6F1F2439C300CAFA2F /* JSONDecodable.swift */; };
 		05168C721F243EB600CAFA2F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C711F243EB600CAFA2F /* SearchResponse.swift */; };
+		05168C791F2447D300CAFA2F /* GitHubClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05168C781F2447D300CAFA2F /* GitHubClientError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,12 +29,12 @@
 
 /* Begin PBXFileReference section */
 		05168C5E1F24356F00CAFA2F /* GitHubSearchRepository */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GitHubSearchRepository; sourceTree = BUILT_PRODUCTS_DIR; };
-		05168C611F24356F00CAFA2F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		05168C681F2436EA00CAFA2F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		05168C6A1F24375800CAFA2F /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		05168C6D1F2437FC00CAFA2F /* JSONDecodeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodeError.swift; sourceTree = "<group>"; };
 		05168C6F1F2439C300CAFA2F /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		05168C711F243EB600CAFA2F /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		05168C781F2447D300CAFA2F /* GitHubClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubClientError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 		05168C601F24356F00CAFA2F /* GitHubSearchRepository */ = {
 			isa = PBXGroup;
 			children = (
-				05168C611F24356F00CAFA2F /* main.swift */,
+				05168C771F2447BD00CAFA2F /* Error */,
 				05168C6C1F2437A700CAFA2F /* Response */,
 			);
 			path = GitHubSearchRepository;
@@ -83,6 +83,14 @@
 				05168C6F1F2439C300CAFA2F /* JSONDecodable.swift */,
 			);
 			name = Response;
+			sourceTree = "<group>";
+		};
+		05168C771F2447BD00CAFA2F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				05168C781F2447D300CAFA2F /* GitHubClientError.swift */,
+			);
+			name = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,11 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05168C791F2447D300CAFA2F /* GitHubClientError.swift in Sources */,
 				05168C6E1F2437FC00CAFA2F /* JSONDecodeError.swift in Sources */,
 				05168C701F2439C300CAFA2F /* JSONDecodable.swift in Sources */,
 				05168C721F243EB600CAFA2F /* SearchResponse.swift in Sources */,
 				05168C691F2436EA00CAFA2F /* User.swift in Sources */,
-				05168C621F24356F00CAFA2F /* main.swift in Sources */,
 				05168C6B1F24375800CAFA2F /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +286,7 @@
 				05168C671F24356F00CAFA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
